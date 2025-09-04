@@ -34,38 +34,36 @@ background: var(--accent);
 color: white;
 }
 
-#about-header {
-position: relative;
-padding: 96px 24px 120px;
-text-align: center;
-color: #fff;
-background: linear-gradient(to bottom, #0f172a, #1e3a8a, #4338ca);
-overflow: hidden;
-}
-
-#about-header::after {
-content: "";
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-bottom: 48px;
-width: 120px;
-height: 3px;
-background: linear-gradient(90deg, transparent, var(--gold), transparent);
-border-radius: 999px;
-}
-
-#about-header h1 {
-font-size: 2rem;
-letter-spacing: 0.5px;
-}
-
-#about-header p {
-max-width: 780px;
-margin: 0.75rem auto 0;
-color: #e6e8ff;
-opacity: 0.95;
-}
+        #about-header {
+            background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+            background-size: 400% 400%;
+            animation: BackgroundGradient 15s ease infinite;
+            position: relative;
+            padding: 96px 24px 120px;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        
+        #about-header h1 {
+            font-family: "Lato", serif;
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+            margin: 0 0 0.6rem;
+        }
+        
+        #about-header p {
+            max-width: 780px;
+            margin: 0.75rem auto 0;
+            color: #e6e8ff;
+            opacity: 0.95;
+        }
+        
+        @keyframes BackgroundGradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
 .container {
 max-width: 1120px;
