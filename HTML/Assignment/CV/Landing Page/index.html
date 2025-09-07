@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Header -->
+    <header>
+        <div class="navbar">
+        <div class="logo">NovaTech</div>
+        <nav>
+            <ul id="navMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Main (empty for now) -->
+    <main>
+        <section class="hero">
+    <h1>Innovating Your Digital Future</h1>
+    <p>We provide cutting-edge solutions for businesses worldwide.</p>
+    <a href="#services" class="btn">Get Started</a>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+<h2>Our Services</h2>
+<div class="service-cards">
+    <div class="card card-web">
+    <h3>Web Development</h3>
+    <p>Building fast, responsive, and modern websites tailored to your needs.</p>
+    </div>
+    <div class="card card-app">
+    <h3>App Development</h3>
+    <p>Creating scalable and user-friendly mobile apps for Android & iOS.</p>
+    </div>
+    <div class="card card-cloud">
+    <h3>Cloud Solutions</h3>
+    <p>Helping businesses migrate, manage, and scale seamlessly on the cloud.</p>
+    </div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+<div class="about-container">
+    <img src="https://i.pinimg.com/736x/35/47/48/354748471cbad482eccf036d1db1a86c.jpg" alt="Our Team">
+    <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+        At NovaTech Solutions, we are passionate about driving digital transformation.
+        With a team of experienced developers, designers, and strategists, we deliver
+        tailored IT solutions that empower businesses worldwide.
+    </p>
+    <p>
+        From building modern websites to deploying scalable cloud solutions, our mission
+        is to help companies innovate and grow in a fast-paced digital era.
+    </p>
+    </div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+<h2>What Our Clients Say</h2>
+<div class="testimonial-grid">
+    <div class="testimonial">
+    <img src="https://i.pinimg.com/736x/ca/8a/de/ca8ade9acdf1115e9364fd30abd41754.jpg" alt="Sarah Johnson" class="testimonial-img">
+    <p>"NovaTech transformed our website and boosted our business growth."</p>
+    <h4>- Oggy</h4>
+    </div>
+    <div class="testimonial">
+    <img src="https://i.pinimg.com/1200x/07/c6/24/07c62428499a13767813c6ef5f7875b0.jpg" alt="Mr Bean" class="testimonial-img">
+    <p>"Their app development team delivered beyond expectations. Highly recommended!"</p>
+    <h4>- Mr Bean</h4>
+    </div>
+    <div class="testimonial">
+    <img src="https://i.pinimg.com/736x/a6/2d/49/a62d49e62f7b447f39c1f0eef7da114b.jpg" alt="Emily Davis" class="testimonial-img">
+    <p>"Reliable, professional, and innovative. A great partner for digital solutions."</p>
+    <h4>- Jack</h4>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+</section>
+
+
+    </main>
+    
+    <footer>
+        <p>© 2025 NovaTech Solutions. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+</script>
+</body>
+</html>
