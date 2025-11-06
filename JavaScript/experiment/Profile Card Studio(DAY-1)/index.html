@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-container">
+<div class="profile-card">
+<img id="profile-img" src="https://via.placeholder.com/100" alt="Profile Image">
+<h2 id="name">Your Name</h2>
+<h4 id="role">Your Role</h4>
+<p id="bio">Short bio goes here...</p>
+<div id="skills"></div>
+<div id="details" class="hidden">
+<p>Extra details shown here...</p>
+</div>
+</div>
+
+
+<div class="controls">
+<input type="text" id="name-input" placeholder="Enter name">
+<input type="text" id="role-input" placeholder="Enter role">
+<textarea id="bio-input" placeholder="Enter bio"></textarea>
+<input type="text" id="skill-input" placeholder="Add skill">
+<button id="add-skill">Add Skill</button>
+<button id="remove-skill">Remove Last Skill</button>
+
+
+<div class="themes">
+<button class="theme" data-color="lightblue">Light Blue</button>
+<button class="theme" data-color="lightgreen">Light Green</button>
+<button class="theme" data-color="lightcoral">Coral</button>
+</div>
+
+
+<button id="toggle-details">Toggle Details</button>
+<input type="text" id="img-url" placeholder="Paste image URL">
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
