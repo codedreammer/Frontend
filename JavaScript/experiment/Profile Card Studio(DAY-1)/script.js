@@ -1,4 +1,3 @@
-// Select elements
 const nameInput = document.getElementById('name-input');
 const roleInput = document.getElementById('role-input');
 const bioInput = document.getElementById('bio-input');
@@ -19,7 +18,7 @@ const card = document.querySelector('.profile-card');
 const imgEl = document.getElementById('profile-img');
 
 
-// Update text live
+
 nameInput.addEventListener('input', () => nameEl.textContent = nameInput.value);
 roleInput.addEventListener('input', () => roleEl.textContent = roleInput.value);
 bioInput.addEventListener('input', () => bioEl.innerText = bioInput.value);
