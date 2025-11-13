@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Info Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h2>Enter Company Details</h2>
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" placeholder="Enter company name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email address">
+            </div>
+            <div class="form-group">
+                <label for="url">Website URL</label>
+                <input type="url" id="url" placeholder="Enter website URL">
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Company Logo URL</label>
+                <input type="url" id="imageUrl" placeholder="Enter image URL">
+            </div>
+            <button onclick="updateDisplay()">Update Display</button>
+        </div>
+
+        <div class="display-box">
+            <h2>Company Information</h2>
+            <div class="company-card">
+                <div class="logo-container">
+                    <img id="displayImage" src="" alt="Company Logo" style="display: none;">
+                    <div id="placeholderImage">📷</div>
+                </div>
+                <div class="company-info">
+                    <h3 id="displayCompany">Company Name</h3>
+                    <p id="displayEmail">📧 Email Address</p>
+                    <p id="displayUrl">🌐 Website URL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
