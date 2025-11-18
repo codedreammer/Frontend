@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Product Filter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Premium Product Filter</h1>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </header>
+        
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Search products..." class="search-input">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-btn" onclick="filterProducts('electronics')">Electronics</button>
+            <button class="filter-btn" onclick="filterProducts('clothing')">Clothing</button>
+            <button class="filter-btn" onclick="filterProducts('books')">Books</button>
+        </div>
+        
+        <div class="products-container">
+            <ul id="productList" class="product-grid"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
